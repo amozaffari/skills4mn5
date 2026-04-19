@@ -1,0 +1,5 @@
+# Local Claude Code settings — contains machine-specific paths and accumulated permissions
+.claude/settings.local.json
+
+# Claude memory files — contain personal project context
+.claude/projects/
