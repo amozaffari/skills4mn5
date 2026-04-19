@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(ssh YOUR_MN5_SSH_ALIAS *)",
+      "Bash(rsync -avz* YOUR_MN5_SSH_ALIAS:*)",
+      "Bash(rsync -avz* * YOUR_MN5_SSH_ALIAS:*)"
+    ]
+  }
+}
