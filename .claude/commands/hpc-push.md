@@ -16,22 +16,10 @@ Run the following Bash command:
 
 ```bash
 rsync -avz --progress \
-  --exclude='__pycache__/' \
-  --exclude='*.pyc' \
-  --exclude='*.pyo' \
+  --filter=':- .gitignore' \
   --exclude='.git/' \
-  --exclude='.venv/' \
-  --exclude='wandb/' \
-  --exclude='runs/' \
-  --exclude='logs/' \
-  --exclude='*.zarr' \
-  --exclude='*.nc' \
-  --exclude='*.npy' \
-  --exclude='*.pt' \
-  --exclude='*.ckpt' \
-  --exclude='.DS_Store' \
-  YOUR_LOCAL_REPO_PATH \
-  YOUR_MN5_SSH_ALIAS:YOUR_REMOTE_REPO_PATH
+  /Users/fmr/development/bsc/ai4land-internship/ \
+  mn5:/gpfs/scratch/bsc32/bsc096444/ai4land-internship/
 ```
 
 After the rsync completes, report what was transferred (summary line from rsync output). If it fails, show the error clearly.
