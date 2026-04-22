@@ -20,6 +20,7 @@ rsync -avz --progress \
   --exclude='*.pyc' \
   --exclude='*.pyo' \
   --exclude='.git/' \
+  --exclude='.venv/' \
   --exclude='wandb/' \
   --exclude='runs/' \
   --exclude='logs/' \
